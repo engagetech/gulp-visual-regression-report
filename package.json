@@ -1,0 +1,26 @@
+{
+	"name": "open-source-css-regression",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@bitbucket.org/robee_shepherd/open-source-css-regression.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"homepage": "https://bitbucket.org/robee_shepherd/open-source-css-regression#readme",
+	"dependencies": {
+		"fancy-log": "^1.3.2",
+		"image-diff": "^2.0.0",
+		"plugin-error": "^1.0.1",
+		"swig": "^1.4.2",
+		"through2": "^2.0.3"
+	},
+	"devDependencies": {
+		"gulp": "^3.9.1"
+	}
+}
