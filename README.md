@@ -1,6 +1,6 @@
 # gulp-visual-regression-report
 
-Compares screenshots of your apps and creates a report, using visual-regression-report.
+Compares screenshots of your apps and creates a report, using [visual-regression-report](TODO link).
 
 ## Installation
 
