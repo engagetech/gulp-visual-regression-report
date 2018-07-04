@@ -19,10 +19,12 @@
 const gulp = require("gulp");
 const gulpVisualRegressionReport = require("../index");
 
-gulp.task("test", function() {
+gulp.task("regression-report", function() {
 	return gulp.src("./screenshots/after/*.png")
 		.pipe(gulpVisualRegressionReport({
 			beforeDir: "./screenshots/before",
-			reportsDir: "./screenshots/report"
+			reportsDir: "./report"
 		}))
 });
+
+gulp.task("default", ["regression-report"]);
