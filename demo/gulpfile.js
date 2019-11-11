@@ -18,6 +18,7 @@
 
 const gulp = require("gulp");
 const gulpVisualRegressionReport = require("../index");
+const argv = require("yargs").argv
 
 gulp.task("regression-report", () => {
 	return gulp.src("./screenshots/after/*.png")
@@ -27,4 +28,17 @@ gulp.task("regression-report", () => {
 		}))
 });
 
-gulp.task("default", ["regression-report"]);
+gulp.task("tests", () => {
+    // execute ng test, change 
+    // --parameters.screenshotPrefix
+});
+
+// Present help info
+gulp.task("help", () => {
+	console.log("\n\nOptions:");
+	console.log("tests --url http://localhost:4200 --version 1.2.3\n  : run tests against a url, save screenshots in folder 1.2.3");
+    console.log("regression-report --before 1.2.3 --after 4.5.6\n  : create a report comparing screenshots from two versions");
+    console.log("\n");
+});
+
+gulp.task("default", ["help"]);

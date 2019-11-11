@@ -25,7 +25,13 @@ module.exports = function (config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['Chrome'],
+    browsers: ['ChromeDesktop'],
+    customLaunchers: {
+      ChromeDesktop: {
+          base: 'Chrome',
+          flags: ['--window-size=800,600']
+      }
+    },
     singleRun: false
   });
 };
